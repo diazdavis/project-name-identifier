@@ -51,7 +51,7 @@ pipeline {
                          case "Surge": 
                             echo "prd"; 
                             break;
-                        case "Emergency ( On demand)": 
+                        case "Emergency (On demand)": 
                             echo "emg"; 
                             break;
                         default:
