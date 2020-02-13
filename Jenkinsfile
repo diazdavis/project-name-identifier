@@ -12,9 +12,7 @@ pipeline {
         }
         stage('Setting up short hand for project') {
             steps {
-                step{
-                    out << "Hello World"
-                    }
+                    echo "Hello World"
                 }
         }
     }
