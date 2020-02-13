@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Setting up short hand for project') {
             steps {
-                echo "Done"
+                script{
                 switch(${Name}) {            
                          case "Colearn": 
                             echo "coln"; 
@@ -33,6 +33,7 @@ pipeline {
                             echo "The value is unknown"; 
                             break; 
                       }
+                }
                 }
         }
     }
