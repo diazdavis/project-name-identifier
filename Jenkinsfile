@@ -12,7 +12,6 @@ pipeline {
         }
         stage('Setting up short hand for project') {
             steps {
-                echo "${params.Project}"
                 script{
                     switch("${params.Project}") {            
                          case "Colearn": 
@@ -29,6 +28,31 @@ pipeline {
                             break; 
                          case "Surge": 
                             echo "surg"; 
+                            break;
+                        default:
+                            echo "wrong selection";
+                            break;
+                      }
+                    }
+                script{
+                    switch("${params.Environment}") {            
+                         case "Development": 
+                            echo "dev"; 
+                            break; 
+                         case "Test": 
+                            echo "tst"; 
+                            break; 
+                         case "Staging": 
+                            echo "stg"; 
+                            break; 
+                         case "Production": 
+                            echo "uspl"; 
+                            break; 
+                         case "Surge": 
+                            echo "prd"; 
+                            break;
+                        case "Emergency ( On demand)": 
+                            echo "emg"; 
                             break;
                         default:
                             echo "wrong selection";
