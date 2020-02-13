@@ -13,23 +13,23 @@ pipeline {
         stage('Setting up short hand for project') {
             steps {
                 switch(${Name}) {            
-                         case 'Colearn': 
-                            println("coln"); 
+                         case "Colearn": 
+                            echo "coln"; 
                             break; 
-                         case 'Perromart': 
-                            println("prmt"); 
+                         case "Perromart": 
+                            echo "prmt"; 
                             break; 
-                         case 'klub': 
-                            println("klub"); 
+                         case "klub": 
+                            echo "klub"; 
                             break; 
-                         case 'USPL': 
-                            println("uspl"); 
+                         case "USPL": 
+                            echo "uspl"; 
                             break; 
-                         case 'Surge': 
-                            println("surg"); 
+                         case "Surge": 
+                            echo "surg"; 
                             break; 
                          default: 
-                            println("The value is unknown"); 
+                            echo "The value is unknown"; 
                             break; 
                       }
                 }
