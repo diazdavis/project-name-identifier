@@ -12,9 +12,9 @@ pipeline {
         }
         stage('Setting up short hand for project') {
             steps {
-                echo "${Project name}"
+                echo "${Name}"
                 script{
-                    switch(${Project name}) {            
+                    switch(${Name}) {            
                          case "Colearn": 
                             echo "coln"; 
                             break; 
