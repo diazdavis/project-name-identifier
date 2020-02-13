@@ -31,7 +31,7 @@ pipeline {
                             echo "surg"; 
                             break;
                         default:
-                            echo "wrong selection;
+                            echo "wrong selection";
                             break;
                       }
                     }
