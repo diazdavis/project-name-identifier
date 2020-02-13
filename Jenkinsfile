@@ -13,19 +13,19 @@ pipeline {
         stage('Setting up short hand for project') {
             steps {
                 switch(${Name}) {            
-                         case Colearn: 
+                         case 'Colearn': 
                             println("coln"); 
                             break; 
-                         case Perromart: 
+                         case 'Perromart': 
                             println("prmt"); 
                             break; 
-                         case klub: 
+                         case 'klub': 
                             println("klub"); 
                             break; 
-                         case USPL: 
+                         case 'USPL': 
                             println("uspl"); 
                             break; 
-                         case Surge: 
+                         case 'Surge': 
                             println("surg"); 
                             break; 
                          default: 
