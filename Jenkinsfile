@@ -1,6 +1,6 @@
 #!groovy
 /*
- * get congfiguartion values to a teraform
+ * get short hand for project info
  */
 pipeline {
     agent any
