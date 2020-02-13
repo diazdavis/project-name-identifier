@@ -11,11 +11,9 @@ pipeline {
             }
         }
         stage('Setting up short hand for project') {
-            steps{
-                projectname = "${Project}"
-                echo projectname
-            }
             steps {
+                String projectname = "${Project}";
+                echo projectname;
                 script{
                     switch(projectname) {            
                          case "Colearn": 
