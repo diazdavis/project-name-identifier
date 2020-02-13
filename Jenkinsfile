@@ -14,7 +14,7 @@ pipeline {
             steps {
                 echo "${Project-Name}"
                 script{
-                    switch(${Project-Name}) {            
+                    switch("${Project-Name}") {            
                          case "Colearn": 
                             echo "coln"; 
                             break; 
