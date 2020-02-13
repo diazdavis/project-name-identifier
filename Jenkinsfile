@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script{
                     switch("${Project name}") {            
-                         case Colearn: 
+                         case "Colearn": 
                             echo "coln"; 
                             break; 
                          case "Perromart": 
@@ -28,10 +28,7 @@ pipeline {
                             break; 
                          case "Surge": 
                             echo "surg"; 
-                            break; 
-                         default: 
-                            echo "The value is unknown"; 
-                            break; 
+                            break;
                       }
                 }
                 }
