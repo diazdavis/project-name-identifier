@@ -16,7 +16,7 @@ pipeline {
                 script{
                     switch(projectname = "${Project}") {            
                          case "Colearn": 
-                            echo "coln"; 
+                            result = "coln"; 
                             break; 
                          case "Perromart": 
                             echo "prmt"; 
@@ -31,6 +31,7 @@ pipeline {
                             echo "surg"; 
                             break;
                       }
+                    echo result;
                     }
                 }
         }
