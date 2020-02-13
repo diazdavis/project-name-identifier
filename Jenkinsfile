@@ -31,47 +31,7 @@ pipeline {
                             echo "surg"; 
                             break;
                       }
-                    switch("${Environment}") {            
-                         case "Colearn": 
-                            echo "coln"; 
-                            break; 
-                         case "Perromart": 
-                            echo "prmt"; 
-                            break; 
-                         case "klub": 
-                            echo "klub"; 
-                            break; 
-                         case "USPL": 
-                            echo "uspl"; 
-                            break; 
-                         case "Surge": 
-                            echo "surg"; 
-                            break;
-                        default: 
-                            echo "wrong selection";
-                            break;
-                      }
-                    switch("${Region}") {            
-                         case "Colearn": 
-                            echo "coln"; 
-                            break; 
-                         case "Perromart": 
-                            echo "prmt"; 
-                            break; 
-                         case "klub": 
-                            echo "klub"; 
-                            break; 
-                         case "USPL": 
-                            echo "uspl"; 
-                            break; 
-                         case "Surge": 
-                            echo "surg"; 
-                            break;
-                        default: 
-                            echo "wrong selection";
-                            break;
-                      }
-                }
+                    }
                 }
         }
     }
