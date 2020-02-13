@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Setting up short hand for project') {
             steps {
-                echo project = ${params.Project}
+                echo project = "${params.Project}"
                 script{
                     switch(project = "${params.Project}") {            
                          case "Colearn": 
