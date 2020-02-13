@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Setting up short hand for project') {
             steps {
-                projectname = ${Project}
+                projectname = "${Project}"
                 echo projectname
                 script{
                     switch(projectname) {            
